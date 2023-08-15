@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+            crossorigin="anonymous"
+        />
+        <title>It Serves</title>
+    </head>
+    <body class="container-fluid p-0">
+        <header class="fixed-top">
+            <nav
+                class="navbar navbar-expand-lg bg-body-tertiary"
+                data-bs-theme="dark"
+            >
+                <div class="container container-fluid">
+                    <a class="navbar-brand logo display-1 fw-bold" href="#"
+                        ><h1>ItServes</h1></a
+                    >
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class="collapse navbar-collapse justify-content-md-end"
+                        id="navbarNav"
+                    >
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="#"
+                                    >Horarios de Servicio</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"
+                                    >Tu ItServes</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"
+                                    >Ayuda</a
+                                >
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"
+                                    >Quienes Somos</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div
+            id="carouselExampleSlidesOnly"
+            class="carousel slide mt-4 pt-5 mb-2 d-none d-lg-block"
+            data-bs-ride="carousel"
+        >
+            <div class="carousel-inner m-0 p-0 mh-25">
+                <div class="carousel-item active">
+                    <img style="max-height: 400px; object-fit: cover;" src="https://siempreinformadoslr.com.ar/02-2023/resize_1675692769.jpg" class="d-block w-100" alt="..." />
+                </div>
+                <div  style="max-height: 400px; object-fit: fill;" class="carousel-item">
+                    <img src="https://economiariojana.com.ar/media/cache/nota_principal_home/uploads/notas/imagenes/55e79f929061d913ccd545f4df35c87ec46c0e7e.jpeg" class="d-block w-100" alt="..." />
+                </div>
+                <div style="max-height: 400px; object-fit: cover;;" class="carousel-item">
+                    <img src="https://nuevarioja.com.ar/galeria/fotos/2021/03/23/l_36506_1616509460.jpg" class="d-block w-100" alt="..." />
+                </div>
+            </div>
+        </div>
+
+        <main class="mt-5 pt-4 mt-lg-0 pt-lg-0">
+            <section class="horarios container-fluid container mb-3">
+                <h2 class="horarios__titulo text-center p-3 display-3 fw-bold">
+                    Horarios de Servicio
+                </h2>
+                <div
+                    class="horarios__linea bg-body-secondary p-2 border rounded"
+                >
+                    <h3 class="horarios__lugar text-center display-4">
+                        Chilecito-Nonogasta
+                    </h3>
+                    <img
+                        class="horarios__tabla img-fluid container"
+                        src="assets/imgs/linea-nonogasta.jpg"
+                        alt="horario de Chilecito"
+                    />
+
+                    <h3 class="horarios__lugar text-center display-4 mt-5">
+                        Chilecito-Vichigasta
+                    </h3>
+                    <img
+                        class="horarios__tabla img-fluid container"
+                        src="assets/imgs/linea-vichigasta.jpg"
+                        alt="horario de Chilecito"
+                    />
+                    <h3 class="horarios__lugar text-center display-4 mt-5">
+                        Sañogasta-Miranda
+                    </h3>
+                    <img
+                        class="horarios__tabla img-fluid container"
+                        src="assets/imgs/linea-miranda.jpg"
+                        alt="horario de Chilecito"
+                    />
+                </div>
+            </section>
+
+            <section style="max-width: 500px;" class="itServes container container-fluid bg-body-secondary rounded border p-3 mb-2 mt-5">
+                <h2 class="itServes__titulo display-4 fw-bold">ItServes</h2>
+                <div class="itServes__saldo saldo text-end">
+                    <h3>Saldo</h3>
+                    <p class="saldo__pesos display-6">$890</p>
+                </div>
+                <div class="itServes__botones d-flex justify-content-end">
+                    <button
+                        class="itServes__boton itServes__boton-cargarSaldo btn btn-outline-primary w-100 p-3 fw-bold"
+                    >
+                        Carga tu ItServes
+                    </button>
+                </div>
+            </section>
+            
+            <footer class=" mt-4 d-flex justify-content-center align-items-center bg-body-secondary p-3" data-bs-theme="dark">
+                <p class="text-light m-0 fw-bold">Copyright © 2023</p>
+            </footer>
+        </main>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
