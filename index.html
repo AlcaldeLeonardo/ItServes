@@ -12,6 +12,7 @@
         <title>It Serves</title>
     </head>
     <body class="container-fluid p-0">
+
         <header class="fixed-top">
             <nav
                 class="navbar navbar-expand-lg bg-body-tertiary"
@@ -40,13 +41,14 @@
                             <li class="nav-item">
                                 <a
                                     class="nav-link active"
+                                    id="btnHorarios"
                                     aria-current="page"
                                     href="#"
                                     >Horarios de Servicio</a
                                 >
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Tu ItServes</a>
+                                <a id="btnTuItServes" class="nav-link" href="#">Tu ItServes</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Ayuda</a>
@@ -99,7 +101,8 @@
         </div>
 
         <main class="mt-5 pt-4 mt-lg-0 pt-lg-0">
-            <section class="horarios container-fluid container mb-3">
+
+            <section id="seccionHorarios" class="horarios container-fluid container mb-3">
                 <h2 class="horarios__titulo text-center p-3 display-3 fw-bold">
                     Horarios de Servicio
                 </h2>
@@ -135,7 +138,8 @@
             </section>
 
             <section
-                style="max-width: 500px"
+                style="max-width: 500px; display: none;"
+                id="seccionItServes"
                 class="itServes container container-fluid bg-body-secondary rounded border p-3 mb-2 mt-5"
             >
                 <h2 class="itServes__titulo display-4 fw-bold">ItServes</h2>
@@ -165,5 +169,7 @@
             integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
             crossorigin="anonymous"
         ></script>
+        <script  type="module" src="scripts/index.js"></script>
+        <script type="module" src="scripts/modules/navegacionSecciones.js"></script>
     </body>
 </html>
