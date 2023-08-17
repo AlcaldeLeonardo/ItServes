@@ -1,3 +1,10 @@
+body {
+  margin: 1px;
+}
 
+.banner__cta {
+  background: linear-gradient(to right, #000b, rgba(0, 0, 0, 15%));
+  height: 89%;
+}
 
 /*# sourceMappingURL=index.css.map */
