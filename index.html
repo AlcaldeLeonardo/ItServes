@@ -9,18 +9,17 @@
             integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
             crossorigin="anonymous"
         />
-        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/index.css" />
         <title>It Serves</title>
     </head>
     <body class="container-fluid p-0">
-
         <header class="fixed-top">
             <nav
                 class="navbar navbar-expand-lg bg-body-tertiary"
                 data-bs-theme="dark"
             >
                 <div class="container container-fluid">
-                    <a class="navbar-brand logo display-1 fw-bold" href="#"
+                    <a class="navbar-brand logo display-1 fw-bold" href="index.html"
                         ><h1>ItServes</h1></a
                     >
                     <button
@@ -57,7 +56,12 @@
                                 >
                             </li>
                             <li class="nav-item">
-                                <a id="btnTuItServes" class="nav-link" href="#seccionItServes">Tu ItServes</a>
+                                <a
+                                    id="btnTuItServes"
+                                    class="nav-link"
+                                    href="#seccionItServes"
+                                    >Tu ItServes</a
+                                >
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Ayuda</a>
@@ -72,11 +76,21 @@
             </nav>
         </header>
 
-        <div class="banner mt-4 pt-5 mb-2 position-relative d-none d-lg-block text-light">
+        <div
+            class="banner mt-4 pt-5 mb-2 position-relative d-none d-lg-block text-light"
+        >
             <div class="banner__cta position-absolute z-1 w-100 p-5">
-                <h2 class="display-5 fw-bold">Recarga tu ItServes con un Clic</h2>
-                <p class="col-md-8 fs-4">Simplifica tu experiencia de viaje hoy mismo! Tu tarjeta! tu forma! Solo recargas en línea sin problemas a través de MercadoPago</p>
-                <button class="btn btn-primary btn-lg mt-2" type="button">Comienza Ya!</button>
+                <h2 class="display-5 fw-bold">
+                    Recarga tu ItServes con un Clic
+                </h2>
+                <p class="col-md-8 fs-4">
+                    Simplifica tu experiencia de viaje hoy mismo! Tu tarjeta! tu
+                    forma! Solo recargas en línea sin problemas a través de
+                    MercadoPago
+                </p>
+                <button class="btn btn-primary btn-lg mt-2" type="button">
+                    Comienza Ya!
+                </button>
             </div>
             <div
                 id="carouselExampleSlidesOnly"
@@ -117,44 +131,60 @@
         </div>
 
         <main class="mt-5 pt-4 mt-lg-0 pt-lg-0">
-
-            <section id="seccionHorarios" class="horarios container-fluid container mb-3">
+            <section
+                id="seccionHorarios"
+                class="horarios container-fluid container mb-3"
+            >
                 <h2 class="horarios__titulo text-center p-3 display-3 fw-bold">
                     Horarios de Servicio
                 </h2>
                 <div
                     class="horarios__linea bg-body-secondary p-2 border rounded"
                 >
-                    <h3 class="horarios__lugar text-center display-4">
-                        Chilecito-Nonogasta
-                    </h3>
-                    <img
-                        class="horarios__tabla img-fluid container"
-                        src="assets/imgs/linea-nonogasta.jpg"
-                        alt="horario de Chilecito"
-                    />
+                    <div class="card-group">
 
-                    <h3 class="horarios__lugar text-center display-4 mt-5">
-                        Chilecito-Vichigasta
-                    </h3>
-                    <img
-                        class="horarios__tabla img-fluid container"
-                        src="assets/imgs/linea-vichigasta.jpg"
-                        alt="horario de Chilecito"
-                    />
-                    <h3 class="horarios__lugar text-center display-4 mt-5">
-                        Sañogasta-Miranda
-                    </h3>
-                    <img
-                        class="horarios__tabla img-fluid container"
-                        src="assets/imgs/linea-miranda.jpg"
-                        alt="horario de Chilecito"
-                    />
+                        <div id="horarioNonogasta" class="horarios__card card">
+                            <a class="text-body-secondary" href="html/linea-nonogasta.html">
+                                <img src="assets/imgs/horarios/linea-nonogasta.jpg" class="card-img-top" alt="..." />
+                                <div class="card-body">
+                                    <h5 class="card-title">A Nonogasta</h5>
+                                    <p class="card-text">
+                                        Horario Completo de Linea Chilecito-Nonogasta
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div id="horarioVichigasta" class="horarios__card card">
+                            <a class="text-body-secondary" href="html/linea-vichigasta.html">
+                                <img src="assets/imgs/horarios/linea-vichigasta.jpg" class="card-img-top" alt="..." />
+                                <div class="card-body">
+                                    <h5 class="card-title">A Vichigasta</h5>
+                                    <p class="card-text">
+                                        Horario completo de linea Chilecito-Vichigasta que tiene Parada por Nonogasta incluidas
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div id="horarioSañogasta" class="horarios__card card">
+                            <a class="text-body-secondary" href="html/linea-sañogasta.html">
+                                <img src="assets/imgs/horarios/linea-Sañogasta.jpg" class="card-img-top" alt="..." />
+                                <div class="card-body">
+                                    <h5 class="card-title">A Sañogasta</h5>
+                                    <p class="card-text">
+                                        Horario completo de linea Chilecito-Sañogasta con parada en terminal de Nonogasta incluida
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </section>
 
-            <section class="itServes container container-fluid bg-body-secondary rounded border p-3 mb-2 mt-5"
-                style="max-width: 500px; display: none;"
+            <section
+                class="itServes container container-fluid bg-body-secondary rounded border p-3 mb-2 mt-5"
+                style="max-width: 500px; display: none"
                 id="seccionItServes"
             >
                 <h2 class="itServes__titulo display-4 fw-bold">ItServes</h2>
@@ -171,7 +201,8 @@
                 </div>
             </section>
 
-            <footer class="mt-4 d-flex justify-content-center align-items-center bg-body-secondary p-3"
+            <footer
+                class="mt-4 d-flex justify-content-center align-items-center bg-body-secondary p-3"
                 data-bs-theme="dark"
             >
                 <p class="text-light m-0 fw-bold">Copyright © 2023</p>
@@ -183,6 +214,6 @@
             integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
             crossorigin="anonymous"
         ></script>
-        <script  type="module" src="scripts/index.js"></script>
+        <script type="module" src="scripts/index.js"></script>
     </body>
 </html>

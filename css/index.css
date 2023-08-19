@@ -3,8 +3,23 @@ body {
 }
 
 .banner__cta {
-  background: linear-gradient(to right, #000b, rgba(0, 0, 0, 15%));
+  background: linear-gradient(to right, #000, rgba(0, 0, 0, 0));
   height: 89%;
+}
+
+.horarios__card {
+  transition: 200ms;
+}
+.horarios__card a {
+  text-decoration: none;
+}
+.horarios__card:hover {
+  cursor: pointer;
+  background-color: #e9e9e9;
+}
+.horarios__card:active {
+  background-color: #e2e2e2;
+  scale: 1.02;
 }
 
 /*# sourceMappingURL=index.css.map */
