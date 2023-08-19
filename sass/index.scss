@@ -11,6 +11,7 @@ body{
 }
 
 .horarios{
+    display: none;
     &__card{
         transition: 200ms;
         a{
@@ -25,4 +26,9 @@ body{
             scale: 1.02;
         }
     }
+}
+
+.itServes{
+    display: none;
+    max-width: 500px;
 }

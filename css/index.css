@@ -7,6 +7,9 @@ body {
   height: 89%;
 }
 
+.horarios {
+  display: none;
+}
 .horarios__card {
   transition: 200ms;
 }
@@ -20,6 +23,11 @@ body {
 .horarios__card:active {
   background-color: #e2e2e2;
   scale: 1.02;
+}
+
+.itServes {
+  display: none;
+  max-width: 500px;
 }
 
 /*# sourceMappingURL=index.css.map */
