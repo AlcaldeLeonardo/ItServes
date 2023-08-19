@@ -50,9 +50,8 @@
                             </li>
                             <li class="nav-item">
                                 <a
-                                    class="nav-link active"
+                                    class="nav-link"
                                     id="btnHorarios"
-                                    aria-current="page"
                                     href="#seccionHorarios"
                                     >Horarios de Servicio</a
                                 >
@@ -78,62 +77,65 @@
             </nav>
         </header>
 
-        <div
-            class="banner mt-4 pt-5 mb-2 position-relative d-none d-lg-block text-light"
-        >
-            <div class="banner__cta position-absolute z-1 w-100 p-5">
-                <h2 class="display-5 fw-bold">
-                    Recarga tu ItServes con un Clic
-                </h2>
-                <p class="col-md-8 fs-4">
-                    Simplifica tu experiencia de viaje hoy mismo! Tu tarjeta! tu
-                    forma! Solo recargas en línea sin problemas a través de
-                    MercadoPago
-                </p>
-                <button class="btn btn-primary btn-lg mt-2" type="button">
-                    Comienza Ya!
-                </button>
-            </div>
-            <div
-                id="carouselExampleSlidesOnly"
-                class="carousel slide d-none d-lg-block"
-                data-bs-ride="carousel"
-            >
-                <div class="carousel-inner m-0 p-0 mh-25">
-                    <div class="carousel-item active">
-                        <img
-                            style="max-height: 400px; object-fit: cover"
-                            src="https://siempreinformadoslr.com.ar/02-2023/resize_1675692769.jpg"
-                            class="d-block w-100"
-                            alt="..."
-                        />
+        <main class="mt-5 pt-4 mt-lg-0 pt-lg-0">
+            
+            <section id="seccionBanner"class="seccionBanner">
+
+                <div class="banner mt-4 pt-5 mb-2 position-relative d-none d-lg-block text-light"
+                >
+                    <div class="banner__cta position-absolute z-1 w-100 p-5">
+                        <h2 class="display-5 fw-bold">
+                            Recarga tu ItServes con un Clic
+                        </h2>
+                        <p class="col-md-8 fs-4">
+                            Simplifica tu experiencia de viaje hoy mismo! Tu tarjeta! tu
+                            forma! Solo recargas en línea sin problemas a través de
+                            MercadoPago
+                        </p>
+                        <button class="btn btn-primary btn-lg mt-2" type="button">
+                            Comienza Ya!
+                        </button>
                     </div>
                     <div
-                        style="max-height: 400px; object-fit: fill"
-                        class="carousel-item"
+                        id="carouselExampleSlidesOnly"
+                        class="carousel slide d-none d-lg-block"
+                        data-bs-ride="carousel"
                     >
-                        <img
-                            src="https://economiariojana.com.ar/media/cache/nota_principal_home/uploads/notas/imagenes/55e79f929061d913ccd545f4df35c87ec46c0e7e.jpeg"
-                            class="d-block w-100"
-                            alt="..."
-                        />
-                    </div>
-                    <div
-                        style="max-height: 400px; object-fit: cover"
-                        class="carousel-item"
-                    >
-                        <img
-                            src="https://nuevarioja.com.ar/galeria/fotos/2021/03/23/l_36506_1616509460.jpg"
-                            class="d-block w-100"
-                            alt="..."
-                        />
+                        <div class="carousel-inner m-0 p-0 mh-25">
+                            <div class="carousel-item active">
+                                <img
+                                    style="max-height: 400px; object-fit: cover"
+                                    src="https://siempreinformadoslr.com.ar/02-2023/resize_1675692769.jpg"
+                                    class="d-block w-100"
+                                    alt="..."
+                                />
+                            </div>
+                            <div
+                                style="max-height: 400px; object-fit: fill"
+                                class="carousel-item"
+                            >
+                                <img
+                                    src="https://economiariojana.com.ar/media/cache/nota_principal_home/uploads/notas/imagenes/55e79f929061d913ccd545f4df35c87ec46c0e7e.jpeg"
+                                    class="d-block w-100"
+                                    alt="..."
+                                />
+                            </div>
+                            <div
+                                style="max-height: 400px; object-fit: cover"
+                                class="carousel-item"
+                            >
+                                <img
+                                    src="https://nuevarioja.com.ar/galeria/fotos/2021/03/23/l_36506_1616509460.jpg"
+                                    class="d-block w-100"
+                                    alt="..."
+                                />
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </section>
 
-        <main class="mt-5 pt-4 mt-lg-0 pt-lg-0">
-            <section class="info container ">
+            <section id="seccionInfo" class="info container ">
                 <div class="info__beneficios border bg-body-tertiary rounded">
 
                     <h2 class="m-2">La Tarjeta que Simplifica tu Viaje</h2>
@@ -268,23 +270,24 @@
                 </div>
             </section>
 
-            <section
-                class="itServes container container-fluid bg-body-secondary rounded border p-3 mb-2 mt-5"
-                id="seccionItServes"
-            >
-                <h2 class="itServes__titulo display-4 fw-bold">ItServes</h2>
-                <div class="itServes__saldo saldo text-end">
-                    <h3>Saldo</h3>
-                    <p class="saldo__pesos display-6">$890</p>
-                </div>
-                <div class="itServes__botones d-flex justify-content-end">
-                    <button
-                        class="itServes__boton itServes__boton-cargarSaldo btn btn-outline-primary w-100 p-3 fw-bold"
-                    >
-                        Carga tu ItServes
-                    </button>
+            <section id="seccionItServes" class="mt-5 pt-lg-5">
+                <div
+                    class="itServes container container-fluid bg-body-secondary rounded border p-3 mb-2">
+                    <h2 class="itServes__titulo display-4 fw-bold">ItServes</h2>
+                    <div class="itServes__saldo saldo text-end">
+                        <h3>Saldo</h3>
+                        <p class="saldo__pesos display-6">$890</p>
+                    </div>
+                    <div class="itServes__botones d-flex justify-content-end">
+                        <button
+                            class="itServes__boton itServes__boton-cargarSaldo btn btn-outline-primary w-100 p-3 fw-bold"
+                        >
+                            Carga tu ItServes
+                        </button>
+                    </div>
                 </div>
             </section>
+
 
             <footer
                 class="mt-4 d-flex justify-content-center align-items-center bg-body-secondary p-3"
